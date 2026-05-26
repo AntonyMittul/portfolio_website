@@ -2,12 +2,13 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMiAzMiI+CiAgPHJlY3Qgd2lkdGg9IjMyIiBoZWlnaHQ9IjMyIiBmaWxsPSIjMGEwYTBhIi8+CiAgPHJlY3QgeD0iMSIgeT0iMSIgd2lkdGg9IjMwIiBoZWlnaHQ9IjMwIiBmaWxsPSJub25lIiBzdHJva2U9IiNjOGI4OWEiIHN0cm9rZS13aWR0aD0iMC43IiBzdHJva2Utb3BhY2l0eT0iMC4zNSIvPgogIDwhLS0gUyBsZXR0ZXJmb3JtIC0tPgogIDxwYXRoIGQ9Ik00LjUgMjIgUTQuNSAyNC41IDcgMjQuNSBRMTAgMjQuNSAxMCAyMS41IFExMCAxOC41IDYuNSAxNy41IFEzLjUgMTYuNSAzLjUgMTMuNSBRMy41IDEwIDcgMTAgUTEwIDEwIDEwIDEyLjUiIAogICAgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjYzhiODlhIiBzdHJva2Utd2lkdGg9IjEuNSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIi8+CiAgPCEtLSBBIGxldHRlcmZvcm0gLS0+CiAgPGxpbmUgeDE9IjExLjUiIHkxPSIyNCIgeDI9IjE1LjUiIHkyPSIxMCIgc3Ryb2tlPSIjYzhiODlhIiBzdHJva2Utd2lkdGg9IjEuNCIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIi8+CiAgPGxpbmUgeDE9IjE1LjUiIHkxPSIxMCIgeDI9IjE5LjUiIHkyPSIyNCIgc3Ryb2tlPSIjYzhiODlhIiBzdHJva2Utd2lkdGg9IjEuNCIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIi8+CiAgPGxpbmUgeDE9IjEzIiB5MT0iMTkiIHgyPSIxOCIgeTI9IjE5IiBzdHJva2U9IiNjOGI4OWEiIHN0cm9rZS13aWR0aD0iMS4yIiBzdHJva2UtbGluZWNhcD0icm91bmQiLz4KICA8IS0tIE0gbGV0dGVyZm9ybSAtLT4KICA8bGluZSB4MT0iMjEiIHkxPSIyNCIgeDI9IjIxIiB5Mj0iMTAiIHN0cm9rZT0iI2M4Yjg5YSIgc3Ryb2tlLXdpZHRoPSIxLjQiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIvPgogIDxsaW5lIHgxPSIyMSIgeTE9IjEwIiB4Mj0iMjQuNSIgeTI9IjE3IiBzdHJva2U9IiNjOGI4OWEiIHN0cm9rZS13aWR0aD0iMS40IiBzdHJva2UtbGluZWNhcD0icm91bmQiLz4KICA8bGluZSB4MT0iMjQuNSIgeTE9IjE3IiB4Mj0iMjgiIHkyPSIxMCIgc3Ryb2tlPSIjYzhiODlhIiBzdHJva2Utd2lkdGg9IjEuNCIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIi8+CiAgPGxpbmUgeDE9IjI4IiB5MT0iMTAiIHgyPSIyOCIgeTI9IjI0IiBzdHJva2U9IiNjOGI4OWEiIHN0cm9rZS13aWR0aD0iMS40IiBzdHJva2UtbGluZWNhcD0icm91bmQiLz4KPC9zdmc+">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>S. Antony Mittul — AI & Data Science</title>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=DM+Mono:wght@300;400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
 <style>
   *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
- 
+
   :root {
     --bg: #0a0a0a;
     --bg2: #111111;
@@ -20,9 +21,9 @@
     --accent2: #8fb3a8;
     --highlight: #e8d5b8;
   }
- 
+
   html { scroll-behavior: smooth; }
- 
+
   body {
     background: var(--bg);
     color: var(--text);
@@ -31,7 +32,7 @@
     overflow-x: hidden;
     cursor: none;
   }
- 
+
   /* Custom cursor */
   .cursor {
     width: 8px; height: 8px;
@@ -55,7 +56,7 @@
   }
   body:has(a:hover) .cursor { width: 12px; height: 12px; background: var(--highlight); }
   body:has(a:hover) .cursor-ring { width: 52px; height: 52px; border-color: rgba(200,184,154,0.2); }
- 
+
   /* Noise overlay */
   body::before {
     content: '';
@@ -65,7 +66,7 @@
     z-index: 1000;
     opacity: 0.4;
   }
- 
+
   /* NAV */
   nav {
     position: fixed; top: 0; left: 0; right: 0;
@@ -102,7 +103,7 @@
   }
   .nav-links a:hover { color: var(--accent); }
   .nav-links a:hover::after { width: 100%; }
- 
+
   /* HERO */
   #hero {
     min-height: 100vh;
@@ -179,7 +180,7 @@
   @keyframes fadeLeft {
     to { opacity: 1; transform: translateX(0); }
   }
- 
+
   .hero-number {
     position: absolute; top: 7rem; right: 3.5rem;
     font-family: 'Playfair Display', serif;
@@ -191,7 +192,7 @@
     user-select: none;
     pointer-events: none;
   }
- 
+
   .hero-label {
     font-family: 'DM Mono', monospace;
     font-size: 11px;
@@ -203,7 +204,7 @@
     transform: translateY(12px);
     animation: fadeUp 0.8s 0.3s forwards ease-out;
   }
- 
+
   .hero-name {
     font-family: 'Playfair Display', serif;
     font-size: clamp(52px, 8vw, 108px);
@@ -215,9 +216,9 @@
     transform: translateY(20px);
     animation: fadeUp 0.9s 0.5s forwards ease-out;
   }
- 
+
   .hero-name span { color: var(--accent); }
- 
+
   .hero-desc {
     max-width: 560px;
     margin-top: 2rem;
@@ -228,7 +229,7 @@
     transform: translateY(12px);
     animation: fadeUp 0.8s 0.75s forwards ease-out;
   }
- 
+
   .hero-cta {
     margin-top: 3rem;
     display: flex; gap: 1.5rem; align-items: center;
@@ -236,7 +237,7 @@
     transform: translateY(12px);
     animation: fadeUp 0.8s 1s forwards ease-out;
   }
- 
+
   .btn-primary {
     display: inline-flex; align-items: center; gap: 0.5rem;
     padding: 0.85rem 2rem;
@@ -260,7 +261,7 @@
   }
   .btn-primary:hover::before { transform: translateX(0); }
   .btn-primary span { position: relative; z-index: 1; }
- 
+
   .btn-ghost {
     font-family: 'DM Mono', monospace;
     font-size: 11px;
@@ -273,7 +274,7 @@
     transition: color 0.3s, border-color 0.3s;
   }
   .btn-ghost:hover { color: var(--accent); border-color: var(--accent); }
- 
+
   .hero-scroll {
     position: absolute; bottom: 2.5rem; left: 3.5rem;
     display: flex; align-items: center; gap: 0.75rem;
@@ -293,10 +294,10 @@
     color: var(--muted);
     text-transform: uppercase;
   }
- 
+
   /* SECTIONS */
   section { padding: 7rem 3.5rem; position: relative; }
- 
+
   .section-header {
     display: flex; align-items: baseline; gap: 1.5rem;
     margin-bottom: 4rem;
@@ -320,7 +321,7 @@
     margin-left: 1rem;
     max-width: 200px;
   }
- 
+
   /* ABOUT */
   #about { background: var(--bg2); }
   .about-grid {
@@ -377,7 +378,7 @@
     margin-top: 0.3rem;
     display: block;
   }
- 
+
   /* EXPERIENCE */
   #experience { background: var(--bg); }
   .exp-item {
@@ -440,10 +441,10 @@
     font-family: 'DM Mono', monospace;
     font-size: 12px;
   }
- 
+
   /* PROJECTS */
   #projects { background: var(--bg2); }
- 
+
   .project-featured {
     display: grid;
     grid-template-columns: 160px 1fr;
@@ -516,7 +517,7 @@
     margin-bottom: 1.5rem;
   }
   .project-card-top .project-num { margin-bottom: 0; }
- 
+
   .projects-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
@@ -577,7 +578,7 @@
     transition: all 0.25s;
   }
   .project-card:hover .tag { border-color: rgba(200,184,154,0.2); color: var(--accent); }
- 
+
   /* SKILLS */
   #skills { background: var(--bg); }
   .skills-wrap {
@@ -616,7 +617,7 @@
   }
   .skill-list li:hover { color: var(--text); padding-left: 0.5rem; }
   .skill-list li:hover::before { opacity: 1; }
- 
+
   /* CONTACT */
   #contact { background: var(--bg2); }
   .contact-inner {
@@ -670,7 +671,7 @@
     transition: transform 0.3s, color 0.3s;
   }
   .contact-link:hover .contact-link-arrow { transform: translate(4px, -4px); color: var(--accent); }
- 
+
   /* FOOTER */
   footer {
     padding: 2rem 3.5rem;
@@ -693,7 +694,7 @@
     transition: color 0.3s;
   }
   .footer-back:hover { color: var(--accent); }
- 
+
   /* ANIMATIONS */
   @keyframes fadeUp {
     to { opacity: 1; transform: translateY(0); }
@@ -701,7 +702,7 @@
   @keyframes lineExpand {
     to { transform: scaleX(1); }
   }
- 
+
   /* Scroll reveal */
   .reveal {
     opacity: 0;
@@ -716,7 +717,7 @@
   .reveal-delay-2 { transition-delay: 0.2s; }
   .reveal-delay-3 { transition-delay: 0.3s; }
   .reveal-delay-4 { transition-delay: 0.4s; }
- 
+
   /* Divider line decoration */
   .deco-line {
     position: absolute; right: 3.5rem; top: 50%;
@@ -725,7 +726,7 @@
     transform: translateY(-50%);
     pointer-events: none;
   }
- 
+
   @media (max-width: 768px) {
     nav { padding: 1.5rem 1.5rem; }
     .nav-links { gap: 1.5rem; }
@@ -745,10 +746,10 @@
 </style>
 </head>
 <body>
- 
+
 <div class="cursor" id="cursor"></div>
 <div class="cursor-ring" id="cursorRing"></div>
- 
+
 <!-- NAV -->
 <nav>
   <a href="#hero" class="nav-logo">AM / Portfolio</a>
@@ -760,7 +761,7 @@
     <a href="#contact">Contact</a>
   </div>
 </nav>
- 
+
 <!-- HERO -->
 <section id="hero">
   <div class="hero-number">01</div>
@@ -785,7 +786,7 @@
     <div class="hero-photo-border"></div>
   </div>
 </section>
- 
+
 <!-- ABOUT -->
 <section id="about">
   <div class="section-header reveal">
@@ -821,7 +822,7 @@
     </div>
   </div>
 </section>
- 
+
 <!-- EXPERIENCE -->
 <section id="experience">
   <div class="section-header reveal">
@@ -829,7 +830,7 @@
     <h2 class="section-title">Experience</h2>
     <div class="section-line"></div>
   </div>
- 
+
   <div class="exp-item reveal">
     <div class="exp-meta">
       <span class="exp-date">Dec 2025 — Apr 2026</span>
@@ -845,7 +846,7 @@
       </ul>
     </div>
   </div>
- 
+
   <div class="exp-item reveal reveal-delay-1">
     <div class="exp-meta">
       <span class="exp-date">Jan 2025 — Mar 2025</span>
@@ -861,7 +862,7 @@
     </div>
   </div>
 </section>
- 
+
 <!-- PROJECTS -->
 <section id="projects">
   <div class="section-header reveal">
@@ -869,7 +870,7 @@
     <h2 class="section-title">Projects</h2>
     <div class="section-line"></div>
   </div>
- 
+
   <!-- Featured Project -->
   <div class="project-featured reveal">
     <div class="project-featured-meta">
@@ -896,7 +897,7 @@
       </div>
     </div>
   </div>
- 
+
   <!-- Project Grid -->
   <div class="projects-grid" style="margin-top:1.5px;">
     <div class="project-card reveal">
@@ -916,7 +917,7 @@
         <span class="tag">Medical AI</span>
       </div>
     </div>
- 
+
     <div class="project-card reveal reveal-delay-1">
       <div class="project-card-top">
         <span class="project-num">003</span>
@@ -934,7 +935,7 @@
         <span class="tag">Power BI</span>
       </div>
     </div>
- 
+
     <div class="project-card reveal reveal-delay-2">
       <div class="project-card-top">
         <span class="project-num">004</span>
@@ -952,12 +953,12 @@
       </div>
     </div>
   </div>
- 
+
   <div class="reveal" style="margin-top:3rem; text-align:center;">
     <a href="https://github.com/AntonyMittul" target="_blank" class="btn-ghost">View all 22 repositories on GitHub ↗</a>
   </div>
 </section>
- 
+
 <!-- SKILLS -->
 <section id="skills">
   <div class="section-header reveal">
@@ -1008,7 +1009,7 @@
     </div>
   </div>
 </section>
- 
+
 <!-- CONTACT -->
 <section id="contact">
   <div class="section-header reveal">
@@ -1051,25 +1052,25 @@
     </div>
   </div>
 </section>
- 
+
 <footer>
   <span class="footer-copy">© 2026 S. Antony Mittul. All rights reserved.</span>
   <a href="#hero" class="footer-back">Back to top ↑</a>
 </footer>
- 
+
 <script>
   // Custom cursor
   const cursor = document.getElementById('cursor');
   const ring = document.getElementById('cursorRing');
   let mouseX = 0, mouseY = 0;
   let ringX = 0, ringY = 0;
- 
+
   document.addEventListener('mousemove', e => {
     mouseX = e.clientX; mouseY = e.clientY;
     cursor.style.left = mouseX + 'px';
     cursor.style.top = mouseY + 'px';
   });
- 
+
   function animateRing() {
     ringX += (mouseX - ringX) * 0.12;
     ringY += (mouseY - ringY) * 0.12;
@@ -1078,7 +1079,7 @@
     requestAnimationFrame(animateRing);
   }
   animateRing();
- 
+
   // Scroll reveal
   const reveals = document.querySelectorAll('.reveal');
   const observer = new IntersectionObserver((entries) => {
@@ -1088,13 +1089,13 @@
       }
     });
   }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
- 
+
   reveals.forEach(el => observer.observe(el));
- 
+
   // Nav active state
   const sections = document.querySelectorAll('section[id]');
   const navLinks = document.querySelectorAll('.nav-links a');
- 
+
   window.addEventListener('scroll', () => {
     let current = '';
     sections.forEach(s => {
